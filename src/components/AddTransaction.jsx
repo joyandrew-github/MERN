@@ -15,16 +15,16 @@ const AddTransactions = (porps)=>{
 
     const onSubmit = (event)=>{
         event.preventDefault();
-        console.log(" Title: ",title," Amount: ",    +amount);
+        console.log(" Title: ",title," Amount: ", +amount);
         onAdd({title,amount: +amount});
-        setTitle=("");
-        setAmount=("");
+
+        setTitle("");
+        setAmount("");
 
     }
     return(
         <div className="add-transaction">
             <h3>Add new transaction</h3>
-           
             <form onSubmit={onSubmit}>
                 <div className="form-control">
                     <label htmlFor="title">Title</label>
